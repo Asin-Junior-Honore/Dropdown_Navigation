@@ -1,0 +1,422 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #f2efef;
+}
+
+header {
+  display: flex;
+  align-items: center;
+}
+
+.navbars {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  width: 100%;
+}
+
+.navbars ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-left: 25px;
+}
+
+.navbars ul li {
+  margin-left: 13px;
+  list-style: none;
+}
+
+.navbars ul li a {
+  text-decoration: none;
+  margin: 0px 10px 0px 10px;
+  padding: 10px 10px;
+  display: block;
+  font-size: 1rem;
+  transition: weight 0.4s ease;
+  font-weight: 500;
+  color: black;
+}
+
+.logo {
+  padding-left: 50px;
+  padding-top: 15px;
+}
+
+.menu-container {
+  position: absolute;
+  bottom: 100%;
+  top: 10%;
+  width: 170px;
+  overflow: hidden;
+  transition: overflow 0.4s;
+  left: 8%;
+}
+
+.menu-container.open-menu {
+  overflow: visible;
+}
+
+.menu-container2 {
+  position: absolute;
+  bottom: 100%;
+  top: 10%;
+  width: 135px;
+  overflow: hidden;
+  left: 23%;
+}
+
+.menu-container2.open-menu {
+  overflow: visible;
+}
+
+.submenu-container {
+  background-color: white;
+  border-radius: 14px;
+  padding: 5px;
+  margin: 5px;
+}
+
+.submenu-container2 {
+  background-color: white;
+  border-radius: 14px;
+  padding: 5px;
+  margin: 5px;
+}
+
+.menu-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  cursor: pointer;
+  margin: 15px;
+}
+
+.menu-content2 {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+}
+
+.menu-content p {
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.menu-content #pic1 {
+  width: 21px;
+  cursor: pointer;
+}
+
+.arrow {
+  position: relative;
+  bottom: 50%;
+  left: 90%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.linkarrow {
+  width: 15px;
+}
+
+.nav-btn {
+  padding-right: 50px;
+}
+
+button#login-btn {
+  padding: 15px;
+  border: none;
+  width: 75px;
+  background: transparent;
+  transition: all 0.4s ease;
+}
+
+button#login-btn:hover {
+  font-weight: 800;
+  cursor: pointer;
+}
+
+button#register-btn {
+  padding: 10px;
+  border-radius: 11px;
+  transition: all 0.4s ease;
+  width: 100px;
+}
+
+button#register-btn:hover {
+  cursor: pointer;
+  font-weight: 800;
+}
+
+.buger {
+  position: absolute;
+  right: 1rem;
+  display: none;
+  transition: display 0.4s ease;
+  top: 1.5rem;
+  width: 32px;
+  height: 21px;
+}
+
+.hambugger {
+  height: 20px;
+  width: 100%;
+  border-radius: 3px;
+}
+
+.firstsection {
+  display: flex;
+  padding: 6rem 9rem 0rem 12rem;
+  justify-content: space-between;
+}
+
+.write-ups {
+  padding-top: 5rem;
+}
+
+.write-ups h1 {
+  line-height: 60px;
+  padding-bottom: 3rem;
+  font-size: 62px;
+  padding-right: 3rem;
+}
+
+.write-ups p {
+  padding-bottom: 3rem;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+button.btn2 {
+  margin-bottom: 4rem;
+  padding: 10px;
+  border-radius: 11px;
+  font-weight: 800;
+  width: 120px;
+  background: black;
+  color: white;
+  transition: all 0.4s ease;
+}
+
+button.btn2:hover {
+  background: white;
+  color: black;
+  cursor: pointer;
+}
+
+.big-picture .bigpic {
+  height: 35rem;
+}
+
+.brands {
+  margin-top: 40px;
+}
+
+.brands-logo {
+  width: 75px;
+  padding: 15px;
+}
+#closebtn {
+  display: none;
+}
+
+#order-t {
+  display: none;
+}
+#order-t1 {
+  display: none;
+}
+@media screen and (max-width: 1208px) {
+  .firstsection {
+    padding: 5rem 2rem 0rem 2rem;
+  }
+  .brands {
+    margin-top: 0px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .buger {
+    display: block;
+  }
+
+  .logo {
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5px 0px 0px 0px;
+  }
+
+  .navbars {
+    width: 100%;
+    display: none;
+  }
+
+  .navbars ul {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+
+  .navbars ul li {
+    text-align: justify;
+    margin: 0px;
+  }
+
+  .navbars ul li a {
+    margin: 0px;
+    font-size: 21px;
+  }
+  .navbars.active {
+    display: flex;
+    flex-direction: column;
+    transition: all 0.4s ease;
+    justify-content: center;
+    background: #f2efef;
+    align-items: center;
+    z-index: 4;
+    position: fixed;
+    width: 50%;
+    height: 100%;
+    transform: translate(100%);
+  }
+  #closebtn {
+    display: block;
+    background-color: black;
+    width: 40px;
+    position: relative;
+    margin-bottom: 30px;
+    left: 60px;
+  }
+  .nav-btn {
+    position: relative;
+    top: -10%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .big-picture {
+    height: 35rem;
+    background: url("/images/image-hero-mobile.png");
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .bigpic {
+    height: 31rem;
+    display: none;
+  }
+  .firstsection {
+    padding: 3rem 0rem 0rem 0rem;
+  }
+
+  .write-ups h1 {
+    font-size: 31px;
+    text-align: center;
+    padding-right: 0;
+    line-height: 0;
+  }
+  .write-ups p {
+    text-align: center;
+    font-size: 15px;
+    line-height: 28px;
+  }
+
+  .btn2 {
+    display: block;
+    margin: auto;
+    margin-bottom: 3rem;
+    padding: 15px;
+    width: 150px;
+  }
+  .brands {
+    text-align: center;
+  }
+
+  .brands-logo {
+    width: 80px;
+    padding: 10px;
+  }
+
+  .firstsection {
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  #order-t.open-menu {
+    display: block;
+  }
+  #order-t1.open-menu {
+    display: block;
+  }
+
+  .arrow {
+    left: 0;
+    top: -2rem;
+    cursor: pointer;
+    margin: 0rem 0rem 0rem 8rem;
+    display: block;
+  }
+  .linkarrow {
+    width: 20px;
+  }
+
+  .menu-container {
+    display: none;
+  }
+
+  .menu-container2 {
+    display: none;
+  }
+
+  #order-t {
+    margin-top: -10px;
+    display: none;
+    flex-direction: column;
+  }
+  #order-t1 {
+    display: none;
+
+    margin-top: -10px;
+  }
+  .pair {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    margin-left: 20px;
+  }
+
+  .pair p {
+    font-weight: 500;
+    font-size: 15px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    padding-left: 10px;
+  }
+
+  .pair img {
+    width: 21px;
+    cursor: pointer;
+  }
+  .pair h3 {
+    padding-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .big-picture {
+    height: 22rem;
+  }
+}
